@@ -8,12 +8,14 @@ manufacturer = "TogKey"
 board = "XIAO BLE"
 usb_enable = true
 
+
 [matrix]
 # Row and col pins are mandatory
 row_pins = ["P0_10", "P0_09"]
 col_pins = ["P0_00", "P0_01", "P0_02"]
 # RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
 row2col = true
+
 
 [layout]
 rows = 2
@@ -25,10 +27,20 @@ map = """
     (1,0)  (1,1)  (1,2)
 """
 
+
 [host]
+# Disable Vial when using Rynk. Rynk and Vial are mutually exclusive.
+vial_enabled = true
+
 # Unlock combination: simultaneous press of specified keys
 # Format: [[row, col], [row, col], ...]
 unlock_keys = [[0, 0], [0, 1]]  # Keys at (row=0,col=0) and (row=0,col=1)
+
+# Start (and stay) unlocked, bypassing the unlock-key combo (default: false).
+# A development escape hatch — don't ship it. Renamed from `vial_insecure`,
+# which still parses.
+insecure = false
+
 
 [keymap]
 # One more layer than is defined below: the keymap references layer 2
@@ -47,3 +59,21 @@ keys = """
 _     _
 _     _         _
 """
+
+
+[ble]
+# Whether to enable BLE feature
+enabled = true
+# Optional Battery Level name exposed through GATT. Defaults to "Central".
+battery_user_description = "Main"
+# nRF52 SAADC pin for reading battery level, you can use a pin number or "vddh"
+battery_adc_pin = "vddh"
+# Set the BLE tx power; higher means better signal but more power consumption. For nRF52840 the maximum tx power is 8.
+# nRF52 only, ignored on other chips
+default_tx_power = 4
+# Whether to enable 2M PHY, defaults to true. nRF52 only, ignored on other chips
+use_2m_phy = true
+# Enable or disable passkey entry, defaults to false
+passkey_entry = false
+# Timeout in seconds for passkey entry, defaults to 120
+passkey_entry_timeout = 120
