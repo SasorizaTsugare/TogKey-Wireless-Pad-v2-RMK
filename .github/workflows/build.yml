@@ -1,0 +1,23 @@
+name: Build RMK firmware
+on:
+  workflow_dispatch:
+    inputs:
+      rmk_version:
+        description: "RMK version to build against (default: main; or a version listed in rmk-template/version-mapping.json, e.g. 0.8)"
+        default: "main"
+        required: false
+  push:
+    # Rebuild only when the config that feeds the firmware changes — not on
+    # README edits, etc. Add paths here if you keep extra config files.
+    paths:
+      - "keyboard.toml"
+      - "vial.json"
+
+jobs:
+  build:
+    uses: haobogu/rmk/.github/workflows/user_build.yml@main
+    with:
+      keyboard_toml_path: "keyboard.toml"
+      vial_json_path: "vial.json"
+      # Manual runs use the dispatch input; pushes build against main.
+      rmk_version: ${{ github.event.inputs.rmk_version || 'main' }}
