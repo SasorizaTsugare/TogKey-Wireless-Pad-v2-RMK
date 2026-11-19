@@ -1,11 +1,10 @@
 # Documentation: https://rmk.rs/docs/configuration/
 [keyboard]
 name = "TogKey Pad Wireless"
-product_name = "TogKey Pad Wireless"
+product_name = "Pad Wireless"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "TogKey"
-#chip = "nrf52840"
 board = "XIAO BLE"
 usb_enable = true
 
@@ -15,7 +14,7 @@ usb_enable = true
 row_pins = ["P0_10", "P0_09"]
 col_pins = ["P0_00", "P0_01", "P0_02"]
 # RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-row2col = true
+#row2col = true
 
 
 [layout]
@@ -40,7 +39,7 @@ unlock_keys = [[0, 0], [0, 1]]  # Keys at (row=0,col=0) and (row=0,col=1)
 # Start (and stay) unlocked, bypassing the unlock-key combo (default: false).
 # A development escape hatch — don't ship it. Renamed from `vial_insecure`,
 # which still parses.
-insecure = false
+insecure = true
 
 
 [keymap]
