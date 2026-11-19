@@ -17,8 +17,7 @@ direct_pins = [
     ["P0_00", "P0_01", "P0_02"]
 ]
 # Pin behavior (default: true = active low with pull-up)
-direct_pin_low_active = false
-
+direct_pin_low_active = true
 # Row and col pins are mandatory
 #row_pins = ["P0_10", "P0_09"]
 #col_pins = ["P0_00", "P0_01", "P0_02"]
