@@ -10,6 +10,7 @@ usb_enable = true
 
 
 [matrix]
+matrix_type = "direct_pin"
 # Row and col pins are mandatory
 row_pins = ["P0_10", "P0_09"]
 col_pins = ["P0_00", "P0_01", "P0_02"]
