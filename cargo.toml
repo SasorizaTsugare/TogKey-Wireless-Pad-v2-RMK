@@ -3,5 +3,11 @@
 #] }
 ## Enable defmt
 defmt = [
+    "dep:defmt",
+    "embassy-hal-internal/defmt",
+    "embassy-sync/defmt",
     "embassy-usb-driver/defmt",
+    "embassy-usb-synopsys-otg/defmt",
+    "embassy-embedded-hal/defmt",
+    "embassy-crypto/defmt",
 ]
