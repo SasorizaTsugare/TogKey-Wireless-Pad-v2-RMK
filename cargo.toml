@@ -1,20 +1,21 @@
 #rmk = { version = "0.9", features = [
 #    "nrf52840_ble", # Enable BLE feature for nRF52840
 #] }
-## Enable defmt
-#defmt = [
-#    "dep:defmt",
-#    "embassy-hal-internal/defmt",
-#    "embassy-sync/defmt",
-#    "embassy-usb-driver/defmt",
-#    "embassy-usb-synopsys-otg/defmt",
-#    "embassy-embedded-hal/defmt",
-#    "embassy-crypto/defmt",
-#]
+[features]
+# Enable defmt
+defmt = [
+    "dep:defmt",
+    "embassy-hal-internal/defmt",
+    "embassy-sync/defmt",
+    "embassy-usb-driver/defmt",
+    "embassy-usb-synopsys-otg/defmt",
+    "embassy-embedded-hal/defmt",
+    "embassy-crypto/defmt",
+]
 ## Allow using the NFC pins as regular GPIO pins (P0_09/P0_10 on nRF52, P0_02/P0_03 on nRF53)
 #nfc-pins-as-gpio = []
 
-[dependencies]
+#[dependencies]
 # rmk = { version = "0.7", default-features = false, features = [
 # rmk = { git = "https://github.com/HaoboGu/rmk", rev = "refs/pull/591/head", default-features = false, features = [
 #rmk = { git = "https://github.com/HaoboGu/rmk", branch = "main", features = [
@@ -38,15 +39,15 @@
 #cortex-m = "0.7.7"
 #cortex-m-rt = "0.7.5"
 #embassy-time = { version = "0.5", features = ["tick-hz-32_768", "defmt"] }
-embassy-nrf = { version = , features = [
-    "defmt",
-    "nrf52840",
-    "time-driver-rtc1",
-    "gpiote",
-    "unstable-pac",
-    "nfc-pins-as-gpio",
-    "time",
-] }
+#embassy-nrf = { version = , features = [
+#    "defmt",
+#    "nrf52840",
+#    "time-driver-rtc1",
+#    "gpiote",
+#    "unstable-pac",
+#    "nfc-pins-as-gpio",
+#    "time",
+#] }
 #embassy-executor = { version = "0.9", features = [
 #    "defmt",
 #    "arch-cortex-m",
