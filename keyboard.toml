@@ -13,8 +13,8 @@ usb_enable = true
 matrix_type = "direct_pin"
 # 2D array representing your direct-pin matrix
 direct_pins = [
-    ["PIN_10", "PIN_09", "_"],
-    ["PIN_00", "PIN_01", "PIN_02"]
+    ["P1_10", "P1_09", "_"],
+    ["P1_00", "P1_01", "P1_02"]
 ]
 #direct_pins = [
 #    ["P0_10", "P0_09", "_"],
