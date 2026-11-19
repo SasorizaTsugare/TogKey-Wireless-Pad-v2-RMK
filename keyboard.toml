@@ -78,3 +78,16 @@ use_2m_phy = true
 passkey_entry = false
 # Timeout in seconds for passkey entry, defaults to 120
 passkey_entry_timeout = 120
+
+
+#[display]
+#driver = "ssd1306"
+#size = "128x32"
+#rotation = 0
+#renderer = "OledRenderer"
+#min_render_interval = 10
+
+#[display.protocol.i2c]
+#instance = "I2C1"
+#scl = "PIN_3"
+#sda = "PIN_2"
