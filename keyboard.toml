@@ -5,8 +5,8 @@ product_name = "TogKey Pad Wireless"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "TogKey"
-chip = "nrf52840"
-#board = "XIAO BLE"
+#chip = "nrf52840"
+board = "XIAO BLE"
 usb_enable = true
 
 
