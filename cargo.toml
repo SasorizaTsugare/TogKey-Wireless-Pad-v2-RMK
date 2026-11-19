@@ -2,12 +2,14 @@
 #    "nrf52840_ble", # Enable BLE feature for nRF52840
 #] }
 ## Enable defmt
-defmt = [
-    "dep:defmt",
-    "embassy-hal-internal/defmt",
-    "embassy-sync/defmt",
-    "embassy-usb-driver/defmt",
-    "embassy-usb-synopsys-otg/defmt",
-    "embassy-embedded-hal/defmt",
-    "embassy-crypto/defmt",
-]
+#defmt = [
+#    "dep:defmt",
+#    "embassy-hal-internal/defmt",
+#    "embassy-sync/defmt",
+#    "embassy-usb-driver/defmt",
+#    "embassy-usb-synopsys-otg/defmt",
+#    "embassy-embedded-hal/defmt",
+#    "embassy-crypto/defmt",
+#]
+## Allow using the NFC pins as regular GPIO pins (P0_09/P0_10 on nRF52, P0_02/P0_03 on nRF53)
+nfc-pins-as-gpio = []
