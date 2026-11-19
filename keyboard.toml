@@ -102,3 +102,10 @@ passkey_entry_timeout = 120
 #instance = "I2C1"
 #scl = "PIN_3"
 #sda = "PIN_2"
+
+
+[rmk]
+# Maximum number of keys pressed simultaneously in a combo
+combo_max_length = 4
+# The number of available BLE profiles
+ble_profiles_num = 4
