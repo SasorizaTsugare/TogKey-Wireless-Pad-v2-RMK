@@ -10,21 +10,19 @@ usb_enable = true
 
 
 [matrix]
-#matrix_type = "direct_pin"
+matrix_type = "direct_pin"
 # 2D array representing your direct-pin matrix
-#direct_pins = [
-#    ["P0_10", "P0_09", "_"],
-#    ["P0_00", "P0_01", "P0_02"]
-#]
-#direct_pins = [
-#    ["P0_10", "P0_09", "_"],
-#    ["P0_00", "P0_01", "P0_02"]
-#]
+direct_pins = [
+    ["P0_10", "P0_09", "_"],
+    ["P0_00", "P0_01", "P0_02"]
+]
 # Pin behavior (default: true = active low with pull-up)
-#direct_pin_low_active = false
+direct_pin_low_active = false
+
+
 # Row and col pins are mandatory
-row_pins = ["P0_10", "P0_09"]
-col_pins = ["P0_00", "P0_01", "P0_02"]
+#row_pins = ["P0_10", "P0_09"]
+#col_pins = ["P0_00", "P0_01", "P0_02"]
 # RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
 #row2col = true
 
