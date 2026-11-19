@@ -1,3 +1,7 @@
 #rmk = { version = "0.9", features = [
 #    "nrf52840_ble", # Enable BLE feature for nRF52840
 #] }
+## Enable defmt
+defmt = [
+    "embassy-usb-driver/defmt",
+]
