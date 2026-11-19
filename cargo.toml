@@ -12,4 +12,4 @@
 #    "embassy-crypto/defmt",
 #]
 ## Allow using the NFC pins as regular GPIO pins (P0_09/P0_10 on nRF52, P0_02/P0_03 on nRF53)
-nfc-pins-as-gpio = true
+nfc-pins-as-gpio = []
