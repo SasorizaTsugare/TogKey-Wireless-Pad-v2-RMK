@@ -26,7 +26,7 @@ usb_enable = true
 row_pins = ["P0_10", "P0_09"]
 col_pins = ["P0_00", "P0_01", "P0_02"]
 # RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-row2col = true
+#row2col = true
 
 
 [layout]
