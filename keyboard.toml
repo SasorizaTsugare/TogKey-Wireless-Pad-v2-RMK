@@ -61,21 +61,21 @@ _     _         _
 [behavior.combo]
 timeout = "20ms"
 
-[[behavior.combo.combos]]
-actions = ["(0,0)", "(0,0)"]
-output = "OSL(2)"
-
-[[behavior.combo.combos]]
-actions = ["(0,0)", "(0,0)"]
-output = "OSL(2)"
-
-[[behavior.combo.combos]]
-actions = ["(0,0)", "(0,0)"]
-output = "O"
-
-[[behavior.combo.combos]]
-actions = ["(0,0)", "(0,0)"]
-output = "O"
+#[[behavior.combo.combos]]
+#actions = ["(0,0)", "(0,0)"]
+#output = "OSL(2)"
+#
+#[[behavior.combo.combos]]
+#actions = ["(0,0)", "(0,0)"]
+#output = "OSL(2)"
+#
+#[[behavior.combo.combos]]
+#actions = ["(0,0)", "(0,0)"]
+#output = "O"
+#
+#[[behavior.combo.combos]]
+#actions = ["(0,0)", "(0,0)"]
+#output = "O"
 
 
 [ble]
