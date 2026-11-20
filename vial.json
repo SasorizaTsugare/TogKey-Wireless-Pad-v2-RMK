@@ -23,7 +23,7 @@
                 "1,2"
             ]
         ]
-    }
+    },
     "customKeycodes": [
         {
             "name": "BT1",
@@ -45,7 +45,7 @@
             "title": "Bluetooth Channel 4",
             "shortName": "BT4"
         },
-                {
+        {
             "name": "NEXT_BT",
             "title": "Switch to the next Bluetooth channel",
             "shortName": "Next\nBT"
