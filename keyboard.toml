@@ -69,28 +69,28 @@ _     _         _
   # Three-key combo, press A, S, and D keys to switch to layer 2
 #  { actions = ["A", "S", "D"], output = "TO(2)" }
 #]
-# Outputs "Hello"
-[[behavior.macro.macrosoperations[0]keycode]]
+# Outputs Volume Up
+[[behavior.macro.macros]]
 operations = [
     { operation = "tap", text = "volu" }
 ]
-# Outputs "Hello"
-[[behavior.macro.macros[1]operations[1]keycode]]
+# Outputs Volume Down
+[[behavior.macro.macros]]
 operations = [
     { operation = "tap", text = "vold" }
 ]
-# Outputs "Hello"
-[[behavior.macro.macros[2]operations[2]keycode]]
+# Outputs Media Previous
+[[behavior.macro.macros]]
 operations = [
     { operation = "tap", text = "mprv" }
 ]
-# Outputs "Hello"
-[[behavior.macro.macros[3]operations[3]keycode]]
+# Outputs Media Play
+[[behavior.macro.macros]]
 operations = [
     { operation = "tap", text = "mply" }
 ]
-# Outputs "Hello"
-[[behavior.macro.macros[4]operations[4]keycode]]
+# Outputs Media Next
+[[behavior.macro.macros]]
 operations = [
     { operation = "tap", text = "mnxt" }
 ]
