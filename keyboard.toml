@@ -70,7 +70,7 @@ _     _         _
 #  { actions = ["A", "S", "D"], output = "TO(2)" }
 #]
 # Outputs "Hello"
-[[behavior.macro.macros[0]operations[0]keycode]]
+[[behavior.macro.macrosoperations[0]keycode]]
 operations = [
     { operation = "tap", text = "volu" }
 ]
