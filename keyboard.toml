@@ -36,7 +36,7 @@ unlock_keys = [[0, 0], [0, 1]]  # Keys at (row=0,col=0) and (row=0,col=1)
 # Start (and stay) unlocked, bypassing the unlock-key combo (default: false).
 # A development escape hatch — don't ship it. Renamed from `vial_insecure`,
 # which still parses.
-insecure = true
+insecure = false
 
 
 [keymap]
@@ -70,30 +70,31 @@ _     _         _
 #  { actions = ["A", "S", "D"], output = "TO(2)" }
 #]
 # Outputs Volume Up
-[[behavior.macro.macros]]
-operations = [
-    { operation = "tap", text = "volu" }
-]
+#[[behavior.macro.macros]]
+#operations = [
+#    { operation = "tap", text = "volu" }
+#]
 # Outputs Volume Down
-[[behavior.macro.macros]]
-operations = [
-    { operation = "tap", text = "vold" }
-]
+#[[behavior.macro.macros]]
+#operations = [
+#    { operation = "tap", text = "vold" }
+#]
 # Outputs Media Previous
-[[behavior.macro.macros]]
-operations = [
-    { operation = "tap", text = "mprv" }
-]
+#[[behavior.macro.macros]]
+#operations = [
+#    { operation = "tap", text = "mprv" }
+#]
 # Outputs Media Play
-[[behavior.macro.macros]]
-operations = [
-    { operation = "tap", text = "mply" }
-]
+#[[behavior.macro.macros]]
+#operations = [
+#    { operation = "tap", text = "mply" }
+#]
 # Outputs Media Next
-[[behavior.macro.macros]]
-operations = [
-    { operation = "tap", text = "mnxt" }
-]
+#[[behavior.macro.macros]]
+#operations = [
+#    { operation = "tap", text = "mnxt" }
+#]
+
 #[[behavior.combo.combos]]
 #actions = ["(0,0)", "(0,0)"]
 #output = "OSL(2)"
