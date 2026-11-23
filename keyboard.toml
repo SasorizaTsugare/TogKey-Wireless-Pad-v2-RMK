@@ -47,8 +47,8 @@ layers = 4
 [[keymap.layer]] # layer 0
 name = "base_layer" #optional name for the layer
 keys = """
-volu     vold
-mprv     mply         mnxt
+Macro0     Macro1
+Macro2     Macro3         Macro4
 """
 
 [[keymap.layer]] # layer 1
@@ -58,9 +58,42 @@ _     _         _
 """
 
 
-[behavior.combo]
-timeout = "20ms"
-
+#[behavior.combo]
+#timeout = "20ms"
+#prior_idle_time = "130ms"  # optional, prevents accidental triggers during fast typing
+#combos = [
+  # Press J and K keys simultaneously to output Escape key
+#  { actions = ["Macro0", "Macro2"], output = "Escape" },
+  # Press F and D keys simultaneously to output Tab key, but only valid on layer 0
+#  { actions = ["F", "D"], output = "Tab", layer = 0 },
+  # Three-key combo, press A, S, and D keys to switch to layer 2
+#  { actions = ["A", "S", "D"], output = "TO(2)" }
+#]
+# Outputs "Hello"
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", text = "volu" }
+]
+# Outputs "Hello"
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", text = "vold" }
+]
+# Outputs "Hello"
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", text = "mprv" }
+]
+# Outputs "Hello"
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", text = "mply" }
+]
+# Outputs "Hello"
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", text = "mnxt" }
+]
 #[[behavior.combo.combos]]
 #actions = ["(0,0)", "(0,0)"]
 #output = "OSL(2)"
@@ -96,17 +129,17 @@ passkey_entry = false
 passkey_entry_timeout = 120
 
 
-[display]
-driver = "ssd1306"
-size = "128x32"
-rotation = 0
-renderer = "OledRenderer"
-min_render_interval = 10
-
-[display.protocol.i2c]
-instance = "I2C1"
-scl = "P0_03"
-sda = "P0_02"
+#[display]
+#driver = "ssd1306"
+#size = "128x32"
+#rotation = 0
+#renderer = "OledRenderer"
+#min_render_interval = 10
+#
+#[display.protocol.i2c]
+#instance = "I2C1"
+#scl = "P0_03"
+#sda = "P0_02"
 
 
 [rmk]
