@@ -70,27 +70,27 @@ _     _         _
 #  { actions = ["A", "S", "D"], output = "TO(2)" }
 #]
 # Outputs "Hello"
-[[behavior.macro.macros]]
+[[behavior.macro.macros[0]operations[0]keycode]]
 operations = [
     { operation = "tap", text = "volu" }
 ]
 # Outputs "Hello"
-[[behavior.macro.macros]]
+[[behavior.macro.macros[1]operations[1]keycode]]
 operations = [
     { operation = "tap", text = "vold" }
 ]
 # Outputs "Hello"
-[[behavior.macro.macros]]
+[[behavior.macro.macros[2]operations[2]keycode]]
 operations = [
     { operation = "tap", text = "mprv" }
 ]
 # Outputs "Hello"
-[[behavior.macro.macros]]
+[[behavior.macro.macros[3]operations[3]keycode]]
 operations = [
     { operation = "tap", text = "mply" }
 ]
 # Outputs "Hello"
-[[behavior.macro.macros]]
+[[behavior.macro.macros[4]operations[4]keycode]]
 operations = [
     { operation = "tap", text = "mnxt" }
 ]
