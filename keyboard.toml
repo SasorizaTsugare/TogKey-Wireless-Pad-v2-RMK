@@ -70,30 +70,30 @@ _     _         _
 #  { actions = ["A", "S", "D"], output = "TO(2)" }
 #]
 # Outputs Volume Up
-#[[behavior.macro.macros]]
-#operations = [
-#    { operation = "tap", text = "volu" }
-#]
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", keycode = "volu" }
+]
 # Outputs Volume Down
-#[[behavior.macro.macros]]
-#operations = [
-#    { operation = "tap", text = "vold" }
-#]
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", keycode = "vold" }
+]
 # Outputs Media Previous
-#[[behavior.macro.macros]]
-#operations = [
-#    { operation = "tap", text = "mprv" }
-#]
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", keycode = "mprv" }
+]
 # Outputs Media Play
-#[[behavior.macro.macros]]
-#operations = [
-#    { operation = "tap", text = "mply" }
-#]
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", keycode = "mply" }
+]
 # Outputs Media Next
-#[[behavior.macro.macros]]
-#operations = [
-#    { operation = "tap", text = "mnxt" }
-#]
+[[behavior.macro.macros]]
+operations = [
+    { operation = "tap", keycode = "mnxt" }
+]
 
 #[[behavior.combo.combos]]
 #actions = ["(0,0)", "(0,0)"]
